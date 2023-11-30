@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module MyEnumerable
   def any?
     each { |item| return true if yield(item) }
