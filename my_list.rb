@@ -7,7 +7,7 @@ class MyList
     @list = elements
   end
 
-  def each(&block)
+  def each
     index = 0
     while index < @list.length
       yield(@list[index])
