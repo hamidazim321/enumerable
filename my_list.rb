@@ -8,6 +8,10 @@ class MyList
   end
 
   def each(&block)
-    @list.each(&block)
+    index = 0
+    while index < @list.length
+      yield(@list[index])
+      index += 1
+    end
   end
 end
