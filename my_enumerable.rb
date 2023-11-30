@@ -1,8 +1,13 @@
-module MyEnumarable
-  def any?
+module MyEnumerbale
+  def all?(&block)
+    @list.all?(&block)
   end
-  def all?
+
+  def any?(&block)
+    @list.any?(&block)
   end
-  def filter
+
+  def filter(&block)
+    @list.select(&block)
   end
 end
