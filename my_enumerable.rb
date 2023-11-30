@@ -5,6 +5,7 @@ module MyEnumerable
   end
   def all?
   end
-  def filter
+  def filter(&block)
+    @list.select(&block)
   end
 end
