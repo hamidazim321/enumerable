@@ -4,7 +4,10 @@ module MyEnumerable
     false
   end
 
-  def all?; end
+     def all?
+     each {|item| return false unless yield(item)}
+     true
+     end
 
   def filter(&block)
     @list.select(&block)
