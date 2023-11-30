@@ -1,6 +1,6 @@
 require_relative 'my_enumerable.rb'
 class MyList
-  include MyEnumarable
+  include MyEnumerable
   attr_reader :list
   def initialize(*elements)
     @list = elements
